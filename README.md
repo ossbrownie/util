@@ -7,7 +7,7 @@ Util
 [![License](https://poser.pugx.org/ossbrownie/util/license)](https://packagist.org/packages/ossbrownie/util)
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ossbrownie/util/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ossbrownie/util/?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/ossbrownie/util/badge.svg?branch=master)](https://coveralls.io/github/ossbrownie/util?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/ossbrownie/util/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ossbrownie/util/?branch=master)
 [![Build Status](https://travis-ci.org/ossbrownie/util.svg?branch=master)](https://travis-ci.org/ossbrownie/util)
 
 A collection of general utilities for simplifying common tasks that are solved by various Brownie packages.
@@ -30,7 +30,7 @@ Add a line to your "require" section in your composer configuration:
 - [ArrayStorage](https://github.com/ossbrownie/util/wiki/ArrayStorage) - Data storage in the form of an associative array. 
 
 
-##Tests
+## Tests
 To run the test suite, you need install the dependencies via composer, then run PHPUnit.
 ```bash
 $> composer.phar install
