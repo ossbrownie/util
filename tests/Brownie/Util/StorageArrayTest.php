@@ -1,11 +1,9 @@
 <?php
 
-use Brownie\Util\ArrayStorage;
+use Brownie\Util\StorageArray;
 
-class ArrayStorageTest extends PHPUnit_Framework_TestCase
+class StorageArrayTest extends PHPUnit_Framework_TestCase
 {
-
-    protected $arrayListProphecy;
 
     protected function setUp()
     {
@@ -13,16 +11,22 @@ class ArrayStorageTest extends PHPUnit_Framework_TestCase
 
     protected function tearDown()
     {
-        $this->arrayListProphecy = null;
     }
 
-    public function testConstructorOk()
+    public function testConstructorOk1()
     {
         $fields = array(
             'question1' => 'answer1',
             'question2' => 'answer2',
         );
-        $arrayList = new ArrayStorage($fields, true);
+        $arrayList = new StorageArray($fields, true);
+        $this->assertEquals($fields, $arrayList->toArray());
+    }
+
+    public function testConstructorOk2()
+    {
+        $fields = array();
+        $arrayList = new StorageArray($fields, false);
         $this->assertEquals($fields, $arrayList->toArray());
     }
 
@@ -35,7 +39,7 @@ class ArrayStorageTest extends PHPUnit_Framework_TestCase
             'question1' => 'answer1',
             'question2' => 'answer2',
         );
-        $arrayList = new ArrayStorage($fields);
+        $arrayList = new StorageArray($fields);
         $this->assertEquals($fields, $arrayList->toArray());
     }
 
@@ -46,7 +50,7 @@ class ArrayStorageTest extends PHPUnit_Framework_TestCase
             'question2' => 'answer2',
         );
         $newvalue = 'answer3';
-        $arrayList = new ArrayStorage($fields, true);
+        $arrayList = new StorageArray($fields, true);
         $arrayList->setQuestion2('answer3');
         $fields['question2'] = $newvalue;
         $this->assertEquals($fields, $arrayList->toArray());
@@ -62,7 +66,7 @@ class ArrayStorageTest extends PHPUnit_Framework_TestCase
             'question1' => 'answer1',
             'question2' => 'answer2',
         );
-        $arrayList = new ArrayStorage($fields, true);
+        $arrayList = new StorageArray($fields, true);
         $arrayList->setQuestion3('answer3');
         $this->assertEquals($fields, $arrayList->toArray());
     }
@@ -77,7 +81,7 @@ class ArrayStorageTest extends PHPUnit_Framework_TestCase
             'question2' => 'answer2',
         );
         $newvalue = 'answer3';
-        $arrayList = new ArrayStorage($fields, true);
+        $arrayList = new StorageArray($fields, true);
         $this->assertEquals($newvalue, $arrayList->getQuestion3('answer3'));
     }
 }

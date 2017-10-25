@@ -27,7 +27,8 @@ Add a line to your "require" section in your composer configuration:
 ```
 
 ## Documentation
-- [ArrayStorage](https://github.com/ossbrownie/util/wiki/ArrayStorage) - Data storage in the form of an associative array. 
+- [StorageArray](https://github.com/ossbrownie/util/wiki/StorageArray) - Data storage in the form of an associative array.
+- [StorageList](https://github.com/ossbrownie/util/wiki/StorageList) - Storage of data in the form of a list.
 
 
 ## Tests

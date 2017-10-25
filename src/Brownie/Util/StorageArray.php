@@ -12,7 +12,7 @@ use Brownie\Util\Exception\UndefinedMethodException;
 /**
  * Data storage in the form of an associative array.
  */
-class ArrayStorage
+class StorageArray
 {
 
     /**
