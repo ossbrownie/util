@@ -1,5 +1,10 @@
 # Change Log
 
+## dev-master (2017-10-27)
+- Refactoring.
+- Added phpunit.xml.dist file.
+- Changes unitTests.
+
 ## dev-master (2017-10-25)
 
 - Renamed the ArrayStorage class in StorageArray.

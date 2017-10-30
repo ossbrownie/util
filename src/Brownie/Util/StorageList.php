@@ -32,7 +32,7 @@ class StorageList
      *
      * @param mixed     $initData   Data to initialize the list.
      */
-    public function __construct($initData)
+    public function __construct($initData = array())
     {
         $this->setInitData($initData);
     }
@@ -55,7 +55,7 @@ class StorageList
      *
      * @return mixed
      */
-    private function getInitData()
+    protected function getInitData()
     {
         return $this->initData;
     }
