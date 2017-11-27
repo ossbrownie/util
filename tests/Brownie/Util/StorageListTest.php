@@ -1,8 +1,10 @@
 <?php
 
+namespace Test\Brownie\Util;
+
 use Brownie\Util\StorageList;
 
-class StorageListTest extends PHPUnit_Framework_TestCase
+class StorageListTest extends \PHPUnit_Framework_TestCase
 {
 
     /**

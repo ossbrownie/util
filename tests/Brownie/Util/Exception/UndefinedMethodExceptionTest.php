@@ -1,8 +1,10 @@
 <?php
 
+namespace Test\Brownie\Util\Exception;
+
 use Brownie\Util\Exception\UndefinedMethodException;
 
-class UndefinedMethodExceptionTest extends PHPUnit_Framework_TestCase
+class UndefinedMethodExceptionTest extends \PHPUnit_Framework_TestCase
 {
 
     /**

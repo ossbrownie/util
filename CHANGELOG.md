@@ -1,5 +1,9 @@
 # Change Log
 
+## dev-master (2017-11-22)
+- Unit test refactoring.
+- Added MethodNotImplementedException.
+
 ## dev-master (2017-10-27)
 - Refactoring.
 - Added phpunit.xml.dist file.

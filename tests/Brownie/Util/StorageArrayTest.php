@@ -1,8 +1,10 @@
 <?php
 
+namespace Test\Brownie\Util;
+
 use Brownie\Util\StorageArray;
 
-class StorageArrayTest extends PHPUnit_Framework_TestCase
+class StorageArrayTest extends \PHPUnit_Framework_TestCase
 {
 
     protected function setUp()
