@@ -54,7 +54,7 @@ class StorageArray
     {
         $method = substr($name, 0, 3);
         $nameField = lcfirst(substr($name, 3));
-        if (!array_key_exists($nameField, $this->toArray())) {
+        if (!array_key_exists($nameField, $this->fields)) {
             throw new UndefinedMethodException('Call to undefined method ' . $name);
         }
         return $this->$method($nameField, $values);

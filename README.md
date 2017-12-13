@@ -15,16 +15,18 @@ A collection of general utilities for simplifying common tasks that are solved b
 ## Requirements
 - **PHP** >= 5.3
 
+
 ## Installation
 Add a line to your "require" section in your composer configuration:
 
 ```json
 {
     "require": {
-        "ossbrownie/util": "0.0.1"
+        "ossbrownie/util": "0.0.2"
     }
 }
 ```
+
 
 ## Documentation
 - [StorageArray](https://github.com/ossbrownie/util/wiki/StorageArray) - Data storage in the form of an associative array.

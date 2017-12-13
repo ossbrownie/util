@@ -70,12 +70,12 @@ class StorageList
      */
     public function get($keyName, $defaultValue = null)
     {
-        $list = $this->toArray();
+        $this->initList();
         $keyName = strtolower($keyName);
-        if (empty($list[$keyName])) {
+        if (empty($this->list[$keyName])) {
             return $defaultValue;
         }
-        return $list[$keyName];
+        return $this->list[$keyName];
     }
 
     /**
@@ -85,9 +85,7 @@ class StorageList
      */
     public function toArray()
     {
-        if (empty($this->list)) {
-            $this->initList();
-        }
+        $this->initList();
         return $this->list;
     }
 
@@ -109,6 +107,8 @@ class StorageList
      */
     protected function initList()
     {
-        $this->setList($this->getInitData());
+        if (empty($this->list)) {
+            $this->setList($this->getInitData());
+        }
     }
 }

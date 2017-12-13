@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.2 (2017-12-13)
+- Fixed receiving the list when overloading the toArray method.
+- Refactoring.
+
 ## 0.0.1 (2017-11-30)
 - Release 0.0.1
 
