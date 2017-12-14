@@ -53,7 +53,10 @@ class StorageArray
     public function __call($name, $values)
     {
         $method = substr($name, 0, 3);
-        $nameField = lcfirst(substr($name, 3));
+        $nameField = substr($name, 3);
+        if (!empty($nameField)) {
+            $nameField = lcfirst($nameField);
+        }
         if (!array_key_exists($nameField, $this->fields)) {
             throw new UndefinedMethodException('Call to undefined method ' . $name);
         }

@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.0.3 (2017-12-14)
+- Fixed Scrutinizer issues.
+
 ## 0.0.2 (2017-12-13)
 - Fixed receiving the list when overloading the toArray method.
 - Refactoring.
@@ -17,7 +20,6 @@
 - Changes unitTests.
 
 ## dev-master (2017-10-25)
-
 - Renamed the ArrayStorage class in StorageArray.
 - Added StorageList class.
 - Added unitTest for class Brownie\Util\StorageList.

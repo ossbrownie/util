@@ -22,7 +22,7 @@ Add a line to your "require" section in your composer configuration:
 ```json
 {
     "require": {
-        "ossbrownie/util": "0.0.2"
+        "ossbrownie/util": "0.0.3"
     }
 }
 ```
@@ -46,5 +46,4 @@ Util is licensed under the [GNU General Public License v3.0](http://www.gnu.org/
 
 
 ## Contact
-
 Problems, comments, and suggestions all welcome: [oss.brownie@gmail.com](mailto:oss.brownie@gmail.com)
