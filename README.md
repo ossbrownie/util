@@ -9,6 +9,7 @@ Util
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ossbrownie/util/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ossbrownie/util/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/ossbrownie/util/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ossbrownie/util/?branch=master)
 [![Build Status](https://travis-ci.org/ossbrownie/util.svg?branch=master)](https://travis-ci.org/ossbrownie/util)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/ossbrownie/util/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
 A collection of general utilities for simplifying common tasks that are solved by various Brownie packages.
 
@@ -22,7 +23,7 @@ Add a line to your "require" section in your composer configuration:
 ```json
 {
     "require": {
-        "ossbrownie/util": "0.0.3"
+        "ossbrownie/util": "0.0.4"
     }
 }
 ```
@@ -31,6 +32,7 @@ Add a line to your "require" section in your composer configuration:
 ## Documentation
 - [StorageArray](https://github.com/ossbrownie/util/wiki/StorageArray) - Data storage in the form of an associative array.
 - [StorageList](https://github.com/ossbrownie/util/wiki/StorageList) - Storage of data in the form of a list.
+- [Registry](https://github.com/ossbrownie/util/wiki/Registry) - Storage of data in the registry with the ability to write and read data.
 
 
 ## Tests
