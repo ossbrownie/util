@@ -23,7 +23,7 @@ Add a line to your "require" section in your composer configuration:
 ```json
 {
     "require": {
-        "ossbrownie/util": "0.0.4"
+        "ossbrownie/util": "0.0.5"
     }
 }
 ```
