@@ -1,11 +1,11 @@
 {
     "name": "ossbrownie/util",
     "description": "A collection of general utilities for simplifying common tasks that are solved by various Brownie packages.",
-    "license": "LGPLv3",
+    "license": "MIT",
     "type": "library",
     "keywords": ["brownie", "util"],
     "homepage": "https://github.com/ossbrownie/util",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "authors": [
         {
             "name": "brownie",
