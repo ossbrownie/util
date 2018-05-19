@@ -44,7 +44,7 @@ $> ./vendor/bin/phpunit --colors=always --bootstrap ./tests/bootstrap.php ./test
 
 
 ## License
-Util is licensed under the [GNU General Public License v3.0](http://www.gnu.org/copyleft/lesser.html)
+Util is licensed under the [MIT License](https://opensource.org/licenses/MIT)
 
 
 ## Contact
